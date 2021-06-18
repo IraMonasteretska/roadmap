@@ -40,7 +40,9 @@ $(document).ready( function() {
     })
 
     $('.roadmap__group.hidden').not(':first').hide()
-
+    if (window.matchMedia('(max-width: 768px)').matches) {
+        $('.roadmap__group').show()
+    };
 
 
     $('.hamburger').on('click', function(){

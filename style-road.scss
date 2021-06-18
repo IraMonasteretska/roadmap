@@ -323,11 +323,12 @@ body{
 			font-weight: bold;
 			font-size: 22px;
 			line-height: 29px;
-			margin-bottom: 15px;
+			// margin-bottom: 15px;
 		}
 		
 		&__list {
 			margin: 0;
+			margin-top: 15px;
 			padding-left: 20px;
 			list-style: none;
 			li{
@@ -397,6 +398,7 @@ body{
         &.active{
 			border: 1px solid #A7CE46;
 			margin-right: -15px;
+			padding-right: 60px;
 			&:after{
 				content:'';
 				background: #A7CE46;
@@ -535,6 +537,7 @@ footer{
 
 			&.active {
 				margin-right: 30px;
+				padding-right: 30px;
 			}
 			&::after {
 				left: -45px;
@@ -631,6 +634,7 @@ footer{
 
 			&.active {
 				margin-right: 0px;
+				padding-right: 20px;
 			}
 			&::after {
 				left: -41px;
