@@ -32,7 +32,7 @@ $(window).on(' scroll', function() {
 $(document).ready( function() {
 
     if (window.matchMedia('(max-width: 768px)').matches) {
-        $('.roadmap__group').removeClass('hidden')
+        // $('.roadmap__group').removeClass('hidden')
         // console.log(2);
     };
     $('.roadmap__group__year').on('click', function(){
@@ -40,10 +40,15 @@ $(document).ready( function() {
         // $(this).parent().css('height','auto');
         $(this).parent().next().show()
     })
+    $('.roadmap__group__year--tablet').on('click', function(){
+        $(this).parent().parent().removeClass('hidden')
+        // $(this).parent().css('height','auto');
+        $(this).parent().parent().next().show()
+    })
 
     $('.roadmap__group.hidden').not(':first').hide()
     if (window.matchMedia('(max-width: 768px)').matches) {
-        $('.roadmap__group').show()
+        // $('.roadmap__group').show()
     };
 
 

@@ -188,6 +188,23 @@ body.scrollHidden {
   border: 3px solid #A7CE46;
 }
 
+.roadmap__group.hidden .roadmap__group__year--tablet {
+  z-index: 31;
+  opacity: 1;
+}
+
+.roadmap__group.hidden .roadmap__group__year--tablet::before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background: url(./img/group-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 10px;
+  top: -30px;
+}
+
 .roadmap__group__year {
   font-weight: bold;
   font-size: 42px;
@@ -243,6 +260,10 @@ body.scrollHidden {
   display: block;
 }
 
+.roadmap__group .roadmap-item:first-child .roadmap__group__year--tablet::before {
+  display: none;
+}
+
 .roadmap__title {
   font-weight: bold;
   font-size: 36px;
@@ -275,7 +296,7 @@ body.scrollHidden {
   -webkit-transform: translate(0, -57%);
           transform: translate(0, -57%);
   color: #FFFFFF;
-  opacity: 0.4;
+  opacity: 1;
   display: none;
 }
 
@@ -517,11 +538,15 @@ footer .r-footer__soc-item {
   .roadmap__group {
     padding-left: 81px;
   }
+  .roadmap__group.hidden::after {
+    top: 30px;
+  }
   .roadmap__list::before {
     left: 97px;
   }
   .roadmap-item {
     margin: 30px 30px 30px 60px;
+    padding: 30px;
   }
   .roadmap-item.active {
     margin-right: 30px;
@@ -581,12 +606,32 @@ footer .r-footer__soc-item {
     padding-left: 0;
     margin-bottom: 0;
   }
+  .roadmap__group::after {
+    top: 65px !important;
+  }
   .roadmap__group__year {
     display: block;
     position: static;
     padding-left: 0;
     text-align: center;
     margin-bottom: -10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .roadmap__group__year::before {
+    position: static !important;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-left: 10px;
   }
   .roadmap__list::before {
     left: 13px;
