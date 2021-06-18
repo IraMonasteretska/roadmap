@@ -189,7 +189,7 @@ body{
 				bottom: 0;
 				background: rgb(31,29,29);
 				background: linear-gradient(0deg, rgba(31,29,29,0.87718837535014) 0%, rgba(31,29,29,0.40940126050420167) 100%);
-				z-index: 3;
+				z-index: 4;
 			}
 
 			.roadmap-item {
@@ -235,6 +235,22 @@ body{
 				left: -60px;
 				top: 0px;
 				display: none;
+			}
+
+			&.active{
+				opacity: 1;
+				&::before{
+					content:'';
+					width: 40px;
+					height: 40px;
+					background: url(./img/group-arrow.svg);
+					background-repeat: no-repeat;
+					background-size: contain;
+					position: absolute;
+					right: 0;
+					top: 0;
+					transform: rotate(180deg);
+				}
 			}
         }
 
@@ -315,6 +331,21 @@ body{
 			color: #FFFFFF;
 			opacity: 1;
 			display: none;
+			&.active{
+				opacity: 1;
+				&::before{
+					content:'';
+					width: 40px;
+					height: 40px;
+					background: url(./img/group-arrow.svg);
+					background-repeat: no-repeat;
+					background-size: contain;
+					position: absolute;
+					right: 10px;
+					top: -30px;;
+					transform: rotate(180deg);
+				}
+			}
 
 		}
 		&:nth-child(2){
@@ -546,6 +577,7 @@ footer{
 		}
 		&__group{
 			padding-left: 81px;
+			padding-top: 20px;
 			&.hidden{
 				&::after{
 					top: 30px;

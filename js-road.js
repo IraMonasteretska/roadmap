@@ -36,12 +36,15 @@ $(document).ready( function() {
         // console.log(2);
     };
     $('.roadmap__group__year').on('click', function(){
-        $(this).parent().removeClass('hidden')
+        $(this).toggleClass('active')
+        $(this).parent().toggleClass('hidden')
         // $(this).parent().css('height','auto');
         $(this).parent().next().show()
     })
     $('.roadmap__group__year--tablet').on('click', function(){
-        $(this).parent().parent().removeClass('hidden')
+        $(this).toggleClass('active')
+
+        $(this).parent().parent().toggleClass('hidden')
         // $(this).parent().css('height','auto');
         $(this).parent().parent().next().show()
     })
