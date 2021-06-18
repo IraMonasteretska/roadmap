@@ -12,9 +12,9 @@
 			position: relative;
 			cursor: pointer;
 			position: absolute;
-			right: 1.5rem;
-			top: 1.5rem;
-			// display: none ;
+			right: 30px;
+			top: 30px;
+			display: none ;
 	
 	
 			&__icon {
@@ -508,6 +508,12 @@ footer{
 			}
 		}
 	}
+	.header_black{
+		.hamburger {
+			display: block;
+		}
+	}
+	
 	.roadmap{
 		padding-top: 48px;
 

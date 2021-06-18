@@ -12,8 +12,9 @@
   position: relative;
   cursor: pointer;
   position: absolute;
-  right: 1.5rem;
-  top: 1.5rem;
+  right: 30px;
+  top: 30px;
+  display: none;
 }
 
 .header_black .hamburger__icon {
@@ -500,6 +501,9 @@ footer .r-footer__soc-item {
   }
   .header__menu ul li {
     margin-bottom: 20px;
+  }
+  .header_black .hamburger {
+    display: block;
   }
   .roadmap {
     padding-top: 48px;
