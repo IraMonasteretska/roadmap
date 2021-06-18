@@ -8,7 +8,7 @@ $.fn.isInViewport = function() {
 
 
 
-$(window).on('resize scroll load', function() {
+$(window).on(' scroll', function() {
     var elTop =  $(window).scrollTop();
     // console.log(elTop);
     $('.roadmap-item').each(function() {
@@ -24,15 +24,17 @@ $(window).on('resize scroll load', function() {
     });
     $('.roadmap-item').removeClass('active')
     $('.roadmap-item.visible').last().addClass('active')
-    if (window.matchMedia('(max-width: 768px)').matches) {
-        $('.roadmap__group').removeClass('hidden')
-        // console.log(2);
-    };
+   
 });
 
 
 
 $(document).ready( function() {
+
+    if (window.matchMedia('(max-width: 768px)').matches) {
+        $('.roadmap__group').removeClass('hidden')
+        // console.log(2);
+    };
     $('.roadmap__group__year').on('click', function(){
         $(this).parent().removeClass('hidden')
         // $(this).parent().css('height','auto');
