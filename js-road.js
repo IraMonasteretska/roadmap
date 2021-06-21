@@ -35,13 +35,13 @@ $(document).ready( function() {
         // $('.roadmap__group').removeClass('hidden')
         // console.log(2);
     };
-    $('.roadmap__group__year').on('click', function(){
+    $('.group-show').on('click', function(){
         $(this).toggleClass('active')
         $(this).parent().toggleClass('hidden')
         // $(this).parent().css('height','auto');
         $(this).parent().next().show()
     })
-    $('.roadmap__group__year--tablet').on('click', function(){
+    $('.group-show_tablet').on('click', function(){
         $(this).toggleClass('active')
 
         $(this).parent().parent().toggleClass('hidden')
