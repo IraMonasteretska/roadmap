@@ -638,6 +638,8 @@ footer .r-footer__soc-item {
 @media (max-width: 640px) {
   .roadmap {
     padding-top: 28px;
+    background-image: url(./img/rm_bg-left.svg);
+    background-position: top 350px left 40px;
   }
   .roadmap__group {
     padding-left: 0;
