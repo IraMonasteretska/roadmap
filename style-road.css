@@ -100,6 +100,7 @@
 
 .header__menu ul a {
   text-decoration: none;
+  font-family: "FF_Utility_Pro";
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -121,7 +122,7 @@ body.scrollHidden {
   background-color: #1F1D1D;
   min-height: 100vh;
   padding: 60px 0 170px 0;
-  background-image: url(./img/rm_bg-left.svg), url(./img/rm_bg-right.svg);
+  background-image: url(../img/rm_bg-left.svg), url(../img/rm_bg-right.svg);
   background-position: top 350px left -40px,top 850px right -20px;
   background-repeat: repeat-y;
 }
@@ -154,7 +155,7 @@ body.scrollHidden {
   content: '';
   width: 40px;
   height: 40px;
-  background: url(./img/group-arrow.svg);
+  background: url(../img/group-arrow.svg);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -197,7 +198,7 @@ body.scrollHidden {
   content: '';
   width: 40px;
   height: 40px;
-  background: url(./img/group-arrow.svg);
+  background: url(../img/group-arrow.svg);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -215,6 +216,7 @@ body.scrollHidden {
   padding-left: 110px;
   position: relative;
   cursor: pointer;
+  font-family: "FF_Utility_Pro";
 }
 
 @media (max-width: 768px) {
@@ -235,7 +237,7 @@ body.scrollHidden {
   content: '';
   width: 40px;
   height: 40px;
-  background: url(./img/group-arrow.svg);
+  background: url(../img/group-arrow.svg);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -290,6 +292,7 @@ body.scrollHidden {
   margin-bottom: 60px;
   position: relative;
   z-index: 4;
+  font-family: "FF_Utility_Pro";
 }
 
 .roadmap-item {
@@ -306,6 +309,7 @@ body.scrollHidden {
 
 .roadmap-item .roadmap__group__year--tablet {
   position: absolute;
+  font-family: "FF_Utility_Pro";
   left: -165px;
   top: 50%;
   font-weight: bold;
@@ -326,7 +330,7 @@ body.scrollHidden {
   content: '';
   width: 40px;
   height: 40px;
-  background: url(./img/group-arrow.svg);
+  background: url(../img/group-arrow.svg);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -361,6 +365,7 @@ body.scrollHidden {
   font-weight: bold;
   font-size: 22px;
   line-height: 29px;
+  font-family: "FF_Utility_Pro";
 }
 
 .roadmap-item__list {
@@ -373,6 +378,7 @@ body.scrollHidden {
 .roadmap-item__list li {
   position: relative;
   margin-bottom: 15px;
+  font-family: "Mont";
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -638,7 +644,7 @@ footer .r-footer__soc-item {
 @media (max-width: 640px) {
   .roadmap {
     padding-top: 28px;
-    background-image: url(./img/rm_bg-left.svg);
+    background-image: url(../img/rm_bg-left.svg);
     background-position: top 350px left 40px;
   }
   .roadmap__group {

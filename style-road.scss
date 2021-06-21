@@ -101,7 +101,7 @@
 			}
 			a{
 				text-decoration: none;	
-				// font-family: Utility Pro;
+				font-family: "FF_Utility_Pro";
 				font-style: normal;
 				font-weight: bold;
 				font-size: 20px;
@@ -136,7 +136,7 @@ body{
     // background-position: top 15% left -40px,bottom 35% right -20px,bottom 32% left 40px;
     // background-repeat: no-repeat,no-repeat,no-repeat;
 
-	background-image: url(./img/rm_bg-left.svg),url(./img/rm_bg-right.svg);
+	background-image: url(../img/rm_bg-left.svg),url(../img/rm_bg-right.svg);
     background-position: top 350px left -40px,top 850px right -20px;
 	background-repeat: repeat-y;
     // background-repeat: no-repeat,no-repeat,no-repeat;
@@ -170,7 +170,7 @@ body{
 					content:'';
 					width: 40px;
 					height: 40px;
-					background: url(./img/group-arrow.svg);
+					background: url(../img/group-arrow.svg);
 					background-repeat: no-repeat;
 					background-size: contain;
 					position: absolute;
@@ -208,7 +208,7 @@ body{
 					content: '';
 					width: 40px;
 					height: 40px;
-					background: url(./img/group-arrow.svg);
+					background: url(../img/group-arrow.svg);
 					background-repeat: no-repeat;
 					background-size: contain;
 					position: absolute;
@@ -229,6 +229,8 @@ body{
             padding-left: 110px;
 			position: relative;
 			cursor: pointer;
+			font-family: "FF_Utility_Pro";
+
 			@media (max-width: 768px){
 				font-size: 24px;
 				position: absolute;
@@ -243,7 +245,7 @@ body{
 					content:'';
 					width: 40px;
 					height: 40px;
-					background: url(./img/group-arrow.svg);
+					background: url(../img/group-arrow.svg);
 					background-repeat: no-repeat;
 					background-size: contain;
 					position: absolute;
@@ -308,6 +310,8 @@ body{
         margin-bottom: 60px;
 		position: relative;
 		z-index: 4;
+		font-family: "FF_Utility_Pro";
+
     }
  
 	&-item{
@@ -322,6 +326,7 @@ body{
 
 		.roadmap__group__year--tablet{
 			position: absolute;
+			font-family: "FF_Utility_Pro";
 			left:-165px;
             top: 50%;
 			font-weight: bold;
@@ -337,7 +342,7 @@ body{
 					content:'';
 					width: 40px;
 					height: 40px;
-					background: url(./img/group-arrow.svg);
+					background: url(../img/group-arrow.svg);
 					background-repeat: no-repeat;
 					background-size: contain;
 					position: absolute;
@@ -374,6 +379,7 @@ body{
 			font-weight: bold;
 			font-size: 22px;
 			line-height: 29px;
+			font-family: "FF_Utility_Pro";
 			// margin-bottom: 15px;
 		}
 		
@@ -385,7 +391,7 @@ body{
 			li{
 				position: relative;
 				margin-bottom: 15px;
-				// font-family: Mont;
+				font-family: "Mont";
 				font-style: normal;
 				font-weight: normal;
 				font-size: 16px;
@@ -662,7 +668,7 @@ footer{
 	.roadmap{
 		padding-top: 28px;
 
-		background-image: url(./img/rm_bg-left.svg);
+		background-image: url(../img/rm_bg-left.svg);
 		background-position: top 350px left 40px;
 
 
